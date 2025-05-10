@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  /* font-family: "Raleway" !important;  */
+}
+.robot {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(209 213 219) !important;
+  font-family: "Roboto", sans-serif;
+
+}
+.counter {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+@keyframes colorCycle {
+  0% {
+    color: #ff5722; /* red-orange */
+  }
+  25% {
+    color: #ffeb3b; /* yellow */
+  }
+  50% {
+    color: #4caf50; /* green */
+  }
+  75% {
+    color: #2196f3; /* blue */
+  }
+  100% {
+    color: #ff5722;
+  }
+}
+
+.ipl-animated-text {
+  animation: colorCycle  0.5s  infinite;
+  font-weight: bold;
+}
+::-webkit-scrollbar {
+  display: none;
+}
